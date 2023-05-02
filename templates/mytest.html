@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+
+
+
+
+<html>
+    <head>
+        <title>RESPONSE</title>
+    </head>
+    <body bgcolor="red">
+        <div class=output>
+        <div id="div1"> 
+<!--<img id="img" src="" width="400" height="300"/>-->
+        </div>
+            <h1>Topic searched  {{mylist[0]}}</h1>
+            <h2>Positivity {{mylist[1]}}</h2>
+            <h2>Negativity {{mylist[2]}}</h2>
+            <h2>Neutrality  {{mylist[3]}}</h2>
+            
+            <h1>The bar chart</h1>
+            
+        <img src="{{ url_for('static', filename='bh.jpg') }}">
+        <h1>The pie chart</h1>
+            <img src="{{ url_for('static', filename='ch.jpg') }}">
+        <!--<button type="button" name="but1" value="clickme" onclick="clicked()">Click me</button>-->
+    </div> 
+    <script>
+        function clicked()
+        {
+            var a=document.getElementById('img');
+            a.src="../bank.jpg";
+        }
+    </script>   
+        </body>
+</html>

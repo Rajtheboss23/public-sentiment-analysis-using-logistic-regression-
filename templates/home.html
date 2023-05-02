@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>HOMEPAGE</title>
+		<link rel="icon" href="{{ url_for('static', filename='cover/logo.jpg') }}"/>
+		<link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+<body>
+	<div class=container>
+		<div class=preloader>
+			<div class=chart>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class=loading>
+				<div class=msg>
+					<div class=text>
+						<span>Welcome</span>
+						<span>Getting Ready</span>
+						<span>Almost There</span>
+						<span>Here We Go</span>
+					</div>
+				</div>
+				<div class=dots>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<div class=logo>
+			<i class="fa-solid fa-chart-bar"></i>
+			<h2 class="logo_name">RSA</h2>
+		</div>
+		<div class=box>
+			<div class=head>
+				<div class="fixed">
+					ANALYSE
+				</div>
+				<div class="changing_text">
+					<div class=words>
+						<span>Current Trends </span>
+						<span>Stock Market</span>
+						<span>Sports Events</span>
+						<span>Anything U Like</span>
+					</div>
+				</div>
+			</div>
+            <form action="/response.html" method="post">
+                <div class=box2>
+                    <div class=search>
+                        <div class=user_inp>
+                            <input type=text id=inp placeholder="Search" autocomplete="off" name=search_val>
+                        </div>
+                         <button type=submit id=submit value=search>
+                               <i class="fa-solid fa-magnifying-glass" id=icon onclick=wish()></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+		</div>
+	</div>
+	<script defer src=home.js></script>
+</body>
