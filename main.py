@@ -33,4 +33,4 @@ def response():
 
 #ensuring that the code executes if the script is run as the main program
 if __name__ == "__main__":
-    app.run(debug=True) #starts the Flask application in debug mode
+    app.run(debug=False,host='0.0.0.0') #starts the Flask application in debug mode
