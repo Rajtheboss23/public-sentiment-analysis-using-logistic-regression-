@@ -11,7 +11,7 @@ app = Flask(__name__, template_folder='templates', static_folder='static')
 @app.route("/", methods=['GET', 'POST'])
 def home():
     # Flask renders the "home.html" template and return the resulting HTML to the user's browser
-    return render_template("home.html")
+    return render_template("index.html")
 
 # defining a Flask route that maps to response.html after form processing
 @app.route("/response.html", methods=['GET', 'POST'])
