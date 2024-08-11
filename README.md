@@ -1,1 +1,1 @@
-# news-sentiment
+# Public sentiment analysis using Logistic Regression
